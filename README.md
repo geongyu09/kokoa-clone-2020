@@ -1,3 +1,3 @@
 # Kokoa Clone 2020 Update
 
-CS got dso much better!
+HTML & CSS are so much fun!
