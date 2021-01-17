@@ -1,60 +1,20 @@
 @import "reset.css";
-@import "status-bar.css";
 @import "variables.css";
+
+/* Components*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+
+/* Screens */
+@import "screen/login.css";
+@import "screen/friends.css";
+@import "screen/find.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.welcome-header {
-  margin: 90px 0px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.welcome-header__title {
-  margin-bottom: 20px;
-  font-size: 25px;
-}
-.welcome-header__text {
-  width: 50%;
-  opacity: 0.6;
-}
-
-#login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
-}
-/* 이 부분 자세히 보기. form창의 크기를 설정할 수 있다. 상하의 padding값을 주어서 y축의 중앙에 placeholder이 오도록 함 */
-#login-form input {
-  border: none;
-  padding: 15px 0px;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-#login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-#login-form input[type="submit"] {
-  background-color: var(--yellow);
-  cursor: pointer;
-}
-#login-form input:not([type="submit"]) {
-  transition: border-color 0.3s ease-in-out;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-/*transiton은 애니메이션을 딜레이(조정)시킬 수 있다. 주의할 점은 애니메이션 코드에 적는 것이 아니라 이처럼 변하는 target을 가리키는 코드 안에 작성하여야 한다.
-그리고 state코드보다 앞에 있어야 작동한다. */
-/*여기서 만약 입력창(input)을 클릭하면(focus)색이 바뀌도록 한다. */
-#login-form input:focus {
-  border-color: var(--yellow);
-}
-#login-form a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
+  color: #2f363e;
 }
