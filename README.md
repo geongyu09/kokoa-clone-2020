@@ -4,7 +4,3 @@
 
 - name
 - red circle
-
-2. what the fucking header
-
-- Icon problem
