@@ -1,3 +1,10 @@
+.user-component:focus,
+.user-component__column,
+.user-component__column img,
+.user-component__column div .user-component__text {
+  color: #2f363e;
+  text-decoration: none;
+}
 .screen-header {
   display: flex;
   justify-content: space-between;
